@@ -41,7 +41,7 @@ char_speed = 0.6
 running = True  # 게임이 진행중인지 판단 여부
 while running:
     # FPS 추가부분
-    dt = clock.tick(60)  # 게임화면의 초당 프레임 수를 설정 ( tick 메서드 사용)
+    dt = clock.tick(30)  # 게임화면의 초당 프레임 수를 설정 ( tick 메서드 사용)
     for e in pygame.event.get():  # 어떠한 동작이 있는지 체크 반드시 필요한 부분(이벤트가 발생 시)
         if e.type == pygame.QUIT:  # 게임창에서  창이 닫히는 이벤트가 발생 한다면
             running = False  # 닫았다면 false
